@@ -1,0 +1,61 @@
+\hypertarget{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration}{}\doxysection{Migration Class Reference}
+\label{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration}\index{Migration@{Migration}}
+
+
+Inheritance diagram for Migration\+:
+% FIG 0
+
+
+Collaboration diagram for Migration\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}{dependencies}}
+\item 
+list \mbox{\hyperlink{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a33f24b85692683d7286389f0224a3d13}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}\label{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}} 
+\index{Migration@{Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        (\textcolor{stringliteral}{'blog'}, \textcolor{stringliteral}{'0001\_initial'}),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a33f24b85692683d7286389f0224a3d13}\label{classblog_1_1migrations_1_10002__auto__20201206__1527_1_1Migration_a33f24b85692683d7286389f0224a3d13}} 
+\index{Migration@{Migration}!operations@{operations}}
+\index{operations@{operations}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        migrations.AddField(}
+\DoxyCodeLine{            model\_name=\textcolor{stringliteral}{'post'},}
+\DoxyCodeLine{            name=\textcolor{stringliteral}{'content'},}
+\DoxyCodeLine{            field=models.TextField(default=0),}
+\DoxyCodeLine{            preserve\_default=\textcolor{keyword}{False},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{        migrations.AddField(}
+\DoxyCodeLine{            model\_name=\textcolor{stringliteral}{'post'},}
+\DoxyCodeLine{            name=\textcolor{stringliteral}{'date\_posted'},}
+\DoxyCodeLine{            field=models.DateTimeField(default=django.utils.timezone.now),}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blog/migrations/\mbox{\hyperlink{0002__auto__20201206__1527_8py}{0002\+\_\+auto\+\_\+20201206\+\_\+1527.\+py}}\end{DoxyCompactItemize}

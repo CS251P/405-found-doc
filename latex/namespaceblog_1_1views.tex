@@ -1,0 +1,82 @@
+\hypertarget{namespaceblog_1_1views}{}\doxysection{blog.\+views Namespace Reference}
+\label{namespaceblog_1_1views}\index{blog.views@{blog.views}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classblog_1_1views_1_1node}{node}}
+\begin{DoxyCompactList}\small\item\em Documentation for class node class node represents a node in the tree structure of code\+\_\+directory variable stat distinguishes between file and folder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_ac7a6c26a00347d8d3b584fa425e544bb}{about}} (request)
+\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_a1b10c496e5a36b24d7da24d88a504728}{builder}} (top)
+\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_a42c6df4d50e5bf9d5039ebf4c23fe192}{create}} (request, folderpath)
+\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_ac7d473830a6f6b62885b78f322c131cf}{create\+\_\+file\+\_\+in\+\_\+folder}} (request, folderpath)
+\begin{DoxyCompactList}\small\item\em Used for Creating files and sub-\/folders as well as deleting sub-\/folders this function takes two parameters , the folderpath and the request to create file or folder or delete folder According to the option creates the prompt page for name if needed to create ,else redirects to home Contains the logic for creating and deletion of folders,files the option whether to create or delete is handled accordingly by passing a special character in the folderpath. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_a1bba5e699efe790be34f4f840301befd}{detail}} (request)
+\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_a0120eaeeae0480af7d10c609d1891e23}{folderview}} (request, folderpath)
+\begin{DoxyCompactList}\small\item\em This function is called on clicking hyperlinks of folders in the directory view. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceblog_1_1views_afb1fccd939a52c7c9493bedc0906bb99}{home}} (request)
+\begin{DoxyCompactList}\small\item\em This function displays the home page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceblog_1_1views_ac7a6c26a00347d8d3b584fa425e544bb}\label{namespaceblog_1_1views_ac7a6c26a00347d8d3b584fa425e544bb}} 
+\index{blog.views@{blog.views}!about@{about}}
+\index{about@{about}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{about()}{about()}}
+{\footnotesize\ttfamily def blog.\+views.\+about (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceblog_1_1views_a1b10c496e5a36b24d7da24d88a504728}\label{namespaceblog_1_1views_a1b10c496e5a36b24d7da24d88a504728}} 
+\index{blog.views@{blog.views}!builder@{builder}}
+\index{builder@{builder}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{builder()}{builder()}}
+{\footnotesize\ttfamily def blog.\+views.\+builder (\begin{DoxyParamCaption}\item[{}]{top }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceblog_1_1views_a42c6df4d50e5bf9d5039ebf4c23fe192}\label{namespaceblog_1_1views_a42c6df4d50e5bf9d5039ebf4c23fe192}} 
+\index{blog.views@{blog.views}!create@{create}}
+\index{create@{create}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily def blog.\+views.\+create (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{folderpath }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceblog_1_1views_ac7d473830a6f6b62885b78f322c131cf}\label{namespaceblog_1_1views_ac7d473830a6f6b62885b78f322c131cf}} 
+\index{blog.views@{blog.views}!create\_file\_in\_folder@{create\_file\_in\_folder}}
+\index{create\_file\_in\_folder@{create\_file\_in\_folder}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{create\_file\_in\_folder()}{create\_file\_in\_folder()}}
+{\footnotesize\ttfamily def blog.\+views.\+create\+\_\+file\+\_\+in\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{folderpath }\end{DoxyParamCaption})}
+
+
+
+Used for Creating files and sub-\/folders as well as deleting sub-\/folders this function takes two parameters , the folderpath and the request to create file or folder or delete folder According to the option creates the prompt page for name if needed to create ,else redirects to home Contains the logic for creating and deletion of folders,files the option whether to create or delete is handled accordingly by passing a special character in the folderpath. 
+
+\mbox{\Hypertarget{namespaceblog_1_1views_a1bba5e699efe790be34f4f840301befd}\label{namespaceblog_1_1views_a1bba5e699efe790be34f4f840301befd}} 
+\index{blog.views@{blog.views}!detail@{detail}}
+\index{detail@{detail}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{detail()}{detail()}}
+{\footnotesize\ttfamily def blog.\+views.\+detail (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceblog_1_1views_a0120eaeeae0480af7d10c609d1891e23}\label{namespaceblog_1_1views_a0120eaeeae0480af7d10c609d1891e23}} 
+\index{blog.views@{blog.views}!folderview@{folderview}}
+\index{folderview@{folderview}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{folderview()}{folderview()}}
+{\footnotesize\ttfamily def blog.\+views.\+folderview (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{folderpath }\end{DoxyParamCaption})}
+
+
+
+This function is called on clicking hyperlinks of folders in the directory view. 
+
+It facilitates the interface for creation of sub-\/folders and files as well as deletion of the folder \mbox{\Hypertarget{namespaceblog_1_1views_afb1fccd939a52c7c9493bedc0906bb99}\label{namespaceblog_1_1views_afb1fccd939a52c7c9493bedc0906bb99}} 
+\index{blog.views@{blog.views}!home@{home}}
+\index{home@{home}!blog.views@{blog.views}}
+\doxysubsubsection{\texorpdfstring{home()}{home()}}
+{\footnotesize\ttfamily def blog.\+views.\+home (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+This function displays the home page. 
+
+The Home page consists of the directory structure which is achieved through the builder function. 

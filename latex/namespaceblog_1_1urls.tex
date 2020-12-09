@@ -1,0 +1,26 @@
+\hypertarget{namespaceblog_1_1urls}{}\doxysection{blog.\+urls Namespace Reference}
+\label{namespaceblog_1_1urls}\index{blog.urls@{blog.urls}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespaceblog_1_1urls_a885d935e702b2639d5893d720e71fde8}{urlpatterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceblog_1_1urls_a885d935e702b2639d5893d720e71fde8}\label{namespaceblog_1_1urls_a885d935e702b2639d5893d720e71fde8}} 
+\index{blog.urls@{blog.urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!blog.urls@{blog.urls}}
+\doxysubsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list urlpatterns}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [}
+\DoxyCodeLine{2     path(\textcolor{stringliteral}{''}, views.home, name=\textcolor{stringliteral}{'blog-\/home'}),}
+\DoxyCodeLine{3     path(\textcolor{stringliteral}{'about/'}, views.about, name=\textcolor{stringliteral}{'blog-\/about'}),}
+\DoxyCodeLine{4     path(\textcolor{stringliteral}{'folderview/<path:folderpath>'},views.folderview,name=\textcolor{stringliteral}{'blog-\/folderview'}),}
+\DoxyCodeLine{5     path(\textcolor{stringliteral}{'create/<path:folderpath>'},views.create\_file\_in\_folder,name=\textcolor{stringliteral}{'blog-\/create\_file\_in\_folder'}),}
+\DoxyCodeLine{6 ]}
+
+\end{DoxyCode}

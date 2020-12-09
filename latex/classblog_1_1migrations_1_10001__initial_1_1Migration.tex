@@ -1,0 +1,68 @@
+\hypertarget{classblog_1_1migrations_1_10001__initial_1_1Migration}{}\doxysection{Migration Class Reference}
+\label{classblog_1_1migrations_1_10001__initial_1_1Migration}\index{Migration@{Migration}}
+
+
+Inheritance diagram for Migration\+:
+% FIG 0
+
+
+Collaboration diagram for Migration\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classblog_1_1migrations_1_10001__initial_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}{dependencies}}
+\item 
+bool \mbox{\hyperlink{classblog_1_1migrations_1_10001__initial_1_1Migration_aa87a85dc3f3ab85f078e036a4c9e8a66}{initial}} = True
+\item 
+list \mbox{\hyperlink{classblog_1_1migrations_1_10001__initial_1_1Migration_a33f24b85692683d7286389f0224a3d13}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classblog_1_1migrations_1_10001__initial_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}\label{classblog_1_1migrations_1_10001__initial_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}} 
+\index{Migration@{Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        migrations.swappable\_dependency(settings.AUTH\_USER\_MODEL),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classblog_1_1migrations_1_10001__initial_1_1Migration_aa87a85dc3f3ab85f078e036a4c9e8a66}\label{classblog_1_1migrations_1_10001__initial_1_1Migration_aa87a85dc3f3ab85f078e036a4c9e8a66}} 
+\index{Migration@{Migration}!initial@{initial}}
+\index{initial@{initial}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{initial}{initial}}
+{\footnotesize\ttfamily bool initial = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classblog_1_1migrations_1_10001__initial_1_1Migration_a33f24b85692683d7286389f0224a3d13}\label{classblog_1_1migrations_1_10001__initial_1_1Migration_a33f24b85692683d7286389f0224a3d13}} 
+\index{Migration@{Migration}!operations@{operations}}
+\index{operations@{operations}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        migrations.CreateModel(}
+\DoxyCodeLine{            name=\textcolor{stringliteral}{'Post'},}
+\DoxyCodeLine{            fields=[}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'id'}, models.AutoField(auto\_created=\textcolor{keyword}{True}, primary\_key=\textcolor{keyword}{True}, serialize=\textcolor{keyword}{False}, verbose\_name=\textcolor{stringliteral}{'ID'})),}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'title'}, models.CharField(max\_length=100)),}
+\DoxyCodeLine{                \textcolor{comment}{\#('content', models.TextField()),}}
+\DoxyCodeLine{                \textcolor{comment}{\#('date\_posted', models.DateTimeField(default=django.utils.timezone.now)),}}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'author'}, models.ForeignKey(on\_delete=django.db.models.deletion.CASCADE, to=settings.AUTH\_USER\_MODEL)),}
+\DoxyCodeLine{            ],}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blog/migrations/\mbox{\hyperlink{blog_2migrations_20001__initial_8py}{0001\+\_\+initial.\+py}}\end{DoxyCompactItemize}

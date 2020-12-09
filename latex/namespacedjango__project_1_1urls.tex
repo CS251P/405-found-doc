@@ -1,0 +1,46 @@
+\hypertarget{namespacedjango__project_1_1urls}{}\doxysection{django\+\_\+project.\+urls Namespace Reference}
+\label{namespacedjango__project_1_1urls}\index{django\_project.urls@{django\_project.urls}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango__project_1_1urls_a6d2dc03df15ae59ed158db270ae5ed91}{document\+\_\+root}}
+\item 
+\mbox{\hyperlink{namespacedjango__project_1_1urls_a8c19b345f7c4ccca5f14c644597b0f3c}{M\+E\+D\+I\+A\+\_\+\+U\+RL}}
+\item 
+list \mbox{\hyperlink{namespacedjango__project_1_1urls_a885d935e702b2639d5893d720e71fde8}{urlpatterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacedjango__project_1_1urls_a6d2dc03df15ae59ed158db270ae5ed91}\label{namespacedjango__project_1_1urls_a6d2dc03df15ae59ed158db270ae5ed91}} 
+\index{django\_project.urls@{django\_project.urls}!document\_root@{document\_root}}
+\index{document\_root@{document\_root}!django\_project.urls@{django\_project.urls}}
+\doxysubsubsection{\texorpdfstring{document\_root}{document\_root}}
+{\footnotesize\ttfamily document\+\_\+root}
+
+\mbox{\Hypertarget{namespacedjango__project_1_1urls_a8c19b345f7c4ccca5f14c644597b0f3c}\label{namespacedjango__project_1_1urls_a8c19b345f7c4ccca5f14c644597b0f3c}} 
+\index{django\_project.urls@{django\_project.urls}!MEDIA\_URL@{MEDIA\_URL}}
+\index{MEDIA\_URL@{MEDIA\_URL}!django\_project.urls@{django\_project.urls}}
+\doxysubsubsection{\texorpdfstring{MEDIA\_URL}{MEDIA\_URL}}
+{\footnotesize\ttfamily M\+E\+D\+I\+A\+\_\+\+U\+RL}
+
+\mbox{\Hypertarget{namespacedjango__project_1_1urls_a885d935e702b2639d5893d720e71fde8}\label{namespacedjango__project_1_1urls_a885d935e702b2639d5893d720e71fde8}} 
+\index{django\_project.urls@{django\_project.urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!django\_project.urls@{django\_project.urls}}
+\doxysubsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list urlpatterns}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [}
+\DoxyCodeLine{2     path(\textcolor{stringliteral}{'admin/'}, admin.site.urls),}
+\DoxyCodeLine{3     path(\textcolor{stringliteral}{'register/'}, user\_views.register, name=\textcolor{stringliteral}{'register'}),}
+\DoxyCodeLine{4     path(\textcolor{stringliteral}{'profile/'}, user\_views.profile, name=\textcolor{stringliteral}{'profile'}),}
+\DoxyCodeLine{5     path(\textcolor{stringliteral}{'login/'}, auth\_views.LoginView.as\_view(template\_name=\textcolor{stringliteral}{'users/login.html'}), name=\textcolor{stringliteral}{'login'}),}
+\DoxyCodeLine{6     path(\textcolor{stringliteral}{'logout/'}, auth\_views.LogoutView.as\_view(template\_name=\textcolor{stringliteral}{'users/logout.html'}), name=\textcolor{stringliteral}{'logout'}),}
+\DoxyCodeLine{7     path(\textcolor{stringliteral}{'ide/'}, user\_views.simple, name=\textcolor{stringliteral}{'ide'}),}
+\DoxyCodeLine{8     path(\textcolor{stringliteral}{''}, include(\textcolor{stringliteral}{'blog.urls'})),}
+\DoxyCodeLine{9     path(\textcolor{stringliteral}{'CodeFiles/<path:filepath>'},user\_views.codeviewer, name=\textcolor{stringliteral}{'codeviewer'}),}
+\DoxyCodeLine{10 ]}
+
+\end{DoxyCode}

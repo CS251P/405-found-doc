@@ -1,3 +1,4 @@
+##imports
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -7,8 +8,8 @@ from django.views.decorators.csrf import csrf_exempt
 import os, subprocess
 
 ## Documentation for class node
-# class node represents a node in the tree structure of code_directory
-# variable stat distinguishes between file and folder
+# Class node represents a node in the tree structure of code_directory.
+# Variable stat distinguishes between file and folder.
 class node():
     def __init__(self,name,stat):
         self.name = name
@@ -23,7 +24,8 @@ class node():
 
 top = node('c_directory','dir')
 
-## This function builds the whole directory structure in 
+## This function builds the whole directory structure in a bredth-first search manner where we iterate through the tree of directory with each file
+#representing a leaf in the graph.
 def builder(top):
     curr = list(os.popen('ls'))
 
@@ -40,7 +42,7 @@ def builder(top):
             new_file=node(curr[i],'file')
             top.add_child(new_file)
 
-
+##This function registers the details of a new user in the database via a POST request.
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -53,7 +55,7 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
 
-
+## This Function lets the user update its personal information including username and profile picture.
 @login_required
 def profile(request):
     if request.method == 'POST':
@@ -79,7 +81,8 @@ def profile(request):
 
     return render(request, 'users/profile.html', context)
 
-
+##This function is called when the user clicks on the editor option. This function is for the compilation and running of temporary files in C++ only.
+#The save functionality does not work here and the code is deleted after the user exits the site.
 @login_required
 @csrf_exempt
 def simple(request):
@@ -135,7 +138,8 @@ def simple(request):
         "inp_Data": "",
     })
 
-
+##This function is called when the user clicks on file in the tree structure of the directory. It then redirects to the editor with the respective
+#code file opened. Here, the user has both options of saving and running the code. This function supports the execution of programs in Java,C++ and Python.
 @login_required
 @csrf_exempt
 def codeviewer(request, filepath):

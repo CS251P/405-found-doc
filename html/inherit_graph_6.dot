@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="Model",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Post",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classblog_1_1models_1_1Post.html",tooltip="Encapsulation of the Post Model which represents files in the CodeFiles Directory."];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Profile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classusers_1_1models_1_1Profile.html",tooltip="This is an encapsulation of the User Profile Model which represents each user in the server uniquely."];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Snippet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classusers_1_1models_1_1Snippet.html",tooltip="This class is an encapsulation of the editor."];
+}

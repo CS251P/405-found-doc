@@ -1,0 +1,87 @@
+\hypertarget{namespaceusers_1_1views}{}\doxysection{users.\+views Namespace Reference}
+\label{namespaceusers_1_1views}\index{users.views@{users.views}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classusers_1_1views_1_1node}{node}}
+\begin{DoxyCompactList}\small\item\em Documentation for class node Class node represents a node in the tree structure of code\+\_\+directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceusers_1_1views_a643b48122ad7d39769a24bafe760c8b2}{builder}} (\mbox{\hyperlink{namespaceusers_1_1views_a8aab264665f2085687d9eeca4c67a691}{top}})
+\begin{DoxyCompactList}\small\item\em This function builds the whole directory structure in a bredth-\/first search manner where we iterate through the tree of directory with each file representing a leaf in the graph. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceusers_1_1views_ad1059ba4e92d23437dfcc1a3495ae138}{codeviewer}} (request, filepath)
+\begin{DoxyCompactList}\small\item\em This function is called when the user clicks on file in the tree structure of the directory. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceusers_1_1views_a9f519ea2d6d5e9fea0b81c2b268ede65}{profile}} (request)
+\begin{DoxyCompactList}\small\item\em This Function lets the user update its personal information including username and profile picture. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceusers_1_1views_ad347c867fefe6f320c81c058721cbe1c}{register}} (request)
+\begin{DoxyCompactList}\small\item\em This function registers the details of a new user in the database via a P\+O\+ST request. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceusers_1_1views_ac78b1dc81b8ee8290a53489035c2e000}{simple}} (request)
+\begin{DoxyCompactList}\small\item\em This function is called when the user clicks on the editor option. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceusers_1_1views_a8aab264665f2085687d9eeca4c67a691}{top}} = \mbox{\hyperlink{classusers_1_1views_1_1node}{node}}(\textquotesingle{}c\+\_\+directory\textquotesingle{},\textquotesingle{}dir\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceusers_1_1views_a643b48122ad7d39769a24bafe760c8b2}\label{namespaceusers_1_1views_a643b48122ad7d39769a24bafe760c8b2}} 
+\index{users.views@{users.views}!builder@{builder}}
+\index{builder@{builder}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{builder()}{builder()}}
+{\footnotesize\ttfamily def users.\+views.\+builder (\begin{DoxyParamCaption}\item[{}]{top }\end{DoxyParamCaption})}
+
+
+
+This function builds the whole directory structure in a bredth-\/first search manner where we iterate through the tree of directory with each file representing a leaf in the graph. 
+
+\mbox{\Hypertarget{namespaceusers_1_1views_ad1059ba4e92d23437dfcc1a3495ae138}\label{namespaceusers_1_1views_ad1059ba4e92d23437dfcc1a3495ae138}} 
+\index{users.views@{users.views}!codeviewer@{codeviewer}}
+\index{codeviewer@{codeviewer}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{codeviewer()}{codeviewer()}}
+{\footnotesize\ttfamily def users.\+views.\+codeviewer (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{filepath }\end{DoxyParamCaption})}
+
+
+
+This function is called when the user clicks on file in the tree structure of the directory. 
+
+It then redirects to the editor with the respective code file opened. Here, the user has both options of saving and running the code. This function supports the execution of programs in Java,C++ and Python. \mbox{\Hypertarget{namespaceusers_1_1views_a9f519ea2d6d5e9fea0b81c2b268ede65}\label{namespaceusers_1_1views_a9f519ea2d6d5e9fea0b81c2b268ede65}} 
+\index{users.views@{users.views}!profile@{profile}}
+\index{profile@{profile}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{profile()}{profile()}}
+{\footnotesize\ttfamily def users.\+views.\+profile (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+This Function lets the user update its personal information including username and profile picture. 
+
+\mbox{\Hypertarget{namespaceusers_1_1views_ad347c867fefe6f320c81c058721cbe1c}\label{namespaceusers_1_1views_ad347c867fefe6f320c81c058721cbe1c}} 
+\index{users.views@{users.views}!register@{register}}
+\index{register@{register}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily def users.\+views.\+register (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+This function registers the details of a new user in the database via a P\+O\+ST request. 
+
+\mbox{\Hypertarget{namespaceusers_1_1views_ac78b1dc81b8ee8290a53489035c2e000}\label{namespaceusers_1_1views_ac78b1dc81b8ee8290a53489035c2e000}} 
+\index{users.views@{users.views}!simple@{simple}}
+\index{simple@{simple}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{simple()}{simple()}}
+{\footnotesize\ttfamily def users.\+views.\+simple (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+This function is called when the user clicks on the editor option. 
+
+This function is for the compilation and running of temporary files in C++ only. The save functionality does not work here and the code is deleted after the user exits the site. 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceusers_1_1views_a8aab264665f2085687d9eeca4c67a691}\label{namespaceusers_1_1views_a8aab264665f2085687d9eeca4c67a691}} 
+\index{users.views@{users.views}!top@{top}}
+\index{top@{top}!users.views@{users.views}}
+\doxysubsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily top = \mbox{\hyperlink{classusers_1_1views_1_1node}{node}}(\textquotesingle{}c\+\_\+directory\textquotesingle{},\textquotesingle{}dir\textquotesingle{})}
+

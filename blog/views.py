@@ -1,3 +1,4 @@
+##imports
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -6,7 +7,9 @@ from .models import Post
 from .forms import CreateFileForm
 import os
 
-
+## Documentation for class node
+# class node represents a node in the tree structure of code_directory
+# variable stat distinguishes between file and folder
 class node():
     def __init__(self,name,stat,path):
         self.name = name
@@ -19,7 +22,7 @@ class node():
 
 def builder(top):
     curr = list(os.popen('ls'))
-
+	# variable 'curr' stores list of children i.e. the files and folders inside it.
     for i in range(len(curr)):
         curr[i]= curr[i].strip()
         dir_check = os.path.isdir(curr[i])
@@ -33,7 +36,8 @@ def builder(top):
             new_file=node(curr[i],'file',top.path+"/"+curr[i])
             top.add_child(new_file)
 
-
+## This function displays the home page.
+# The Home page consists of the directory structure which is achieved through the builder function. 
 @login_required
 def home(request):
 	top = node('CodeFiles','dir','CodeFiles')
@@ -47,7 +51,6 @@ def home(request):
 	contents = [top.child[user_index]]
 	
 	return render(request, 'blog/home.html', {'contents':contents,'user_id':request.user.id})
-
 
 
 def detail(request):
@@ -71,7 +74,8 @@ def create(request,folderpath):
 	return render(request, 'blog/create.html', {'form': form})
 
 
-
+## This function is called on clicking hyperlinks of folders in the directory view.
+# It facilitates the interface for creation of sub-folders and files as well as deletion of the folder
 @login_required
 def folderview(request,folderpath):
 	print(folderpath)
@@ -85,8 +89,11 @@ def folderview(request,folderpath):
 			return redirect("/create/"+folderpath+"^")
 	return render(request,'blog/folderview.html')
 
-
-
+## Used for Creating files and sub-folders as well as deleting sub-folders
+#this function takes two parameters , the folderpath and the request to create file or folder or delete folder
+#According to the option creates the prompt page for name if needed to create ,else redirects to home
+# Contains the logic for creating and deletion of folders,files
+# the option whether to create or delete is handled accordingly by passing a special character in the folderpath
 @login_required
 def create_file_in_folder(request,folderpath):
 	option = folderpath[len(folderpath)-1]

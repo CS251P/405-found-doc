@@ -1,0 +1,91 @@
+\hypertarget{classblog_1_1models_1_1Post}{}\doxysection{Post Class Reference}
+\label{classblog_1_1models_1_1Post}\index{Post@{Post}}
+
+
+Encapsulation of the \mbox{\hyperlink{classblog_1_1models_1_1Post}{Post}} Model which represents files in the Code\+Files Directory.  
+
+
+
+
+Inheritance diagram for Post\+:
+% FIG 0
+
+
+Collaboration diagram for Post\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classblog_1_1models_1_1Post_a23e8041ce1015febe4fdace3225714f9}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em String Representation. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classblog_1_1models_1_1Post_ab67f2144ddac118160f44ba0024a2cac}{get\+\_\+absolute\+\_\+url}} (self)
+\begin{DoxyCompactList}\small\item\em url representation for the file detail view \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classblog_1_1models_1_1Post_ad50afb6ec7b2501164b80a0480596ded}{author}} = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)
+\item 
+\mbox{\hyperlink{classblog_1_1models_1_1Post_a6858851eee0e05f318897984757b59dc}{content}} = models.\+Text\+Field()
+\item 
+\mbox{\hyperlink{classblog_1_1models_1_1Post_a17c7a42ca792bf36c2cfa68d3eb660f1}{date\+\_\+posted}} = models.\+Date\+Time\+Field(default=timezone.\+now)
+\item 
+\mbox{\hyperlink{classblog_1_1models_1_1Post_a051e403214cb6872ad3fe4e50302a6ee}{title}} = models.\+Char\+Field(max\+\_\+length=100)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulation of the \mbox{\hyperlink{classblog_1_1models_1_1Post}{Post}} Model which represents files in the Code\+Files Directory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_a23e8041ce1015febe4fdace3225714f9}\label{classblog_1_1models_1_1Post_a23e8041ce1015febe4fdace3225714f9}} 
+\index{Post@{Post}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+String Representation. 
+
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_ab67f2144ddac118160f44ba0024a2cac}\label{classblog_1_1models_1_1Post_ab67f2144ddac118160f44ba0024a2cac}} 
+\index{Post@{Post}!get\_absolute\_url@{get\_absolute\_url}}
+\index{get\_absolute\_url@{get\_absolute\_url}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{get\_absolute\_url()}{get\_absolute\_url()}}
+{\footnotesize\ttfamily def get\+\_\+absolute\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+url representation for the file detail view 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_ad50afb6ec7b2501164b80a0480596ded}\label{classblog_1_1models_1_1Post_ad50afb6ec7b2501164b80a0480596ded}} 
+\index{Post@{Post}!author@{author}}
+\index{author@{author}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{author}{author}}
+{\footnotesize\ttfamily author = models.\+Foreign\+Key(User, on\+\_\+delete=models.\+C\+A\+S\+C\+A\+DE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_a6858851eee0e05f318897984757b59dc}\label{classblog_1_1models_1_1Post_a6858851eee0e05f318897984757b59dc}} 
+\index{Post@{Post}!content@{content}}
+\index{content@{content}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily content = models.\+Text\+Field()\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_a17c7a42ca792bf36c2cfa68d3eb660f1}\label{classblog_1_1models_1_1Post_a17c7a42ca792bf36c2cfa68d3eb660f1}} 
+\index{Post@{Post}!date\_posted@{date\_posted}}
+\index{date\_posted@{date\_posted}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{date\_posted}{date\_posted}}
+{\footnotesize\ttfamily date\+\_\+posted = models.\+Date\+Time\+Field(default=timezone.\+now)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classblog_1_1models_1_1Post_a051e403214cb6872ad3fe4e50302a6ee}\label{classblog_1_1models_1_1Post_a051e403214cb6872ad3fe4e50302a6ee}} 
+\index{Post@{Post}!title@{title}}
+\index{title@{title}!Post@{Post}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily title = models.\+Char\+Field(max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blog/\mbox{\hyperlink{blog_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

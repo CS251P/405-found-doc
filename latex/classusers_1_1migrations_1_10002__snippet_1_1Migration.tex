@@ -1,0 +1,61 @@
+\hypertarget{classusers_1_1migrations_1_10002__snippet_1_1Migration}{}\doxysection{Migration Class Reference}
+\label{classusers_1_1migrations_1_10002__snippet_1_1Migration}\index{Migration@{Migration}}
+
+
+Inheritance diagram for Migration\+:
+% FIG 0
+
+
+Collaboration diagram for Migration\+:
+% FIG 1
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classusers_1_1migrations_1_10002__snippet_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}{dependencies}}
+\item 
+list \mbox{\hyperlink{classusers_1_1migrations_1_10002__snippet_1_1Migration_a33f24b85692683d7286389f0224a3d13}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classusers_1_1migrations_1_10002__snippet_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}\label{classusers_1_1migrations_1_10002__snippet_1_1Migration_a2bf1a0da0a83299e260789a8473d7460}} 
+\index{Migration@{Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        (\textcolor{stringliteral}{'users'}, \textcolor{stringliteral}{'0001\_initial'}),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classusers_1_1migrations_1_10002__snippet_1_1Migration_a33f24b85692683d7286389f0224a3d13}\label{classusers_1_1migrations_1_10002__snippet_1_1Migration_a33f24b85692683d7286389f0224a3d13}} 
+\index{Migration@{Migration}!operations@{operations}}
+\index{operations@{operations}!Migration@{Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  [}
+\DoxyCodeLine{        migrations.CreateModel(}
+\DoxyCodeLine{            name=\textcolor{stringliteral}{'Snippet'},}
+\DoxyCodeLine{            fields=[}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'id'}, models.AutoField(auto\_created=\textcolor{keyword}{True}, primary\_key=\textcolor{keyword}{True}, serialize=\textcolor{keyword}{False}, verbose\_name=\textcolor{stringliteral}{'ID'})),}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'text'}, models.TextField()),}
+\DoxyCodeLine{                (\textcolor{stringliteral}{'created\_at'}, models.DateTimeField(auto\_now\_add=\textcolor{keyword}{True})),}
+\DoxyCodeLine{            ],}
+\DoxyCodeLine{            options=\{}
+\DoxyCodeLine{                \textcolor{stringliteral}{'ordering'}: (\textcolor{stringliteral}{'-\/created\_at'},),}
+\DoxyCodeLine{            \},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+users/migrations/\mbox{\hyperlink{0002__snippet_8py}{0002\+\_\+snippet.\+py}}\end{DoxyCompactItemize}
